@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gurjaka — Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-left">Gurjaka</div>
+
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <!-- <a href="blog.html">Blog</a> -->
+        <a href="#" class="highlight">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-icon-wrap">
+        <img src="assets/pretty.png" class="hero-avatar" alt="icon" />
+      </div>
+
+      <h1 class="hero-title">
+        Systems engineering with precision and curiosity
+      </h1>
+
+      <p class="hero-subtitle">
+        I chase simplicity, crave control, and build clean abstractions. Deep
+        into Linux internals, terminals, C, NixOS, and low-level systems. I
+        break things to learn, automate to focus, and tinker to grow.
+      </p>
+
+      <a class="button" href="projects.html">View my work</a>
+
+      <div class="hero-stats">
+        <div><span id="stat-projects">0</span> projects</div>
+        <div><span id="stat-years">2+</span> years coding</div>
+        <div><span id="stat-stars">0</span> stars</div>
+      </div>
+    </section>
+
+    <section class="about-preview">
+      <div class="about-img">
+        <img
+          src="https://avatars.githubusercontent.com/u/143032436?v=4"
+          alt="photo"
+        />
+      </div>
+
+      <div class="about-text">
+        <h2>Hi, I'm Gurjaka — a systems-focused engineer</h2>
+
+        <p>
+          I specialize in low-level development: C, Linux internals, terminals,
+          graphics pipelines, and Wayland/wlroots. I enjoy understanding the
+          entire stack — from CPU architecture and memory allocation to window
+          managers and UI tooling.
+        </p>
+
+        <p>
+          I work on projects like
+          <a
+            href="https//github.com/pretty-terminal/pretty)"
+            class="inline-link"
+            >Pretty</a
+          >, a modern terminal emulator, contribute to Qtile’s Wayland backend,
+          and build real systems at
+          <a href="asklaw.ge" class="inline-link">Asklaw.ge</a> a growing
+          legal-tech startup.
+        </p>
+
+        <a class="button" href="about.html">Learn more</a>
+      </div>
+    </section>
+
+    <section class="featured-projects">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Pretty -->
+        <a
+          href="https://github.com/pretty-terminal/pretty"
+          class="project-card"
+        >
+          <div class="project-icon">
+            <svg viewBox="0 0 100 100" class="icon-mask">
+              <defs>
+                <clipPath id="roundedMask" clipPathUnits="objectBoundingBox">
+                  <rect x="0" y="0" width="1" height="1" rx="0.22" ry="0.22" />
+                </clipPath>
+              </defs>
+              <image
+                href="assets/icons/pretty.svg"
+                width="100"
+                height="100"
+                clip-path="url(#roundedMask)"
+              />
+            </svg>
+          </div>
+          <h3>Pretty Terminal Emulator</h3>
+          <p>
+            A modern, aesthetic terminal emulator focused on ergonomics and
+            clean low-level design.
+          </p>
+
+          <div class="project-tags">
+            <span>C</span><span>SDL3</span><span>Terminals</span>
+          </div>
+        </a>
+
+        <!-- Dotfiles -->
+        <a href="https://github.com/Gurjaka/Dotfiles" class="project-card">
+          <div class="project-icon">
+            <svg viewBox="0 0 100 100" class="icon-mask">
+              <defs>
+                <clipPath id="roundedMask" clipPathUnits="objectBoundingBox">
+                  <rect x="0" y="0" width="1" height="1" rx="0.22" ry="0.22" />
+                </clipPath>
+              </defs>
+              <image
+                href="assets/icons/nix-snowflake.svg"
+                width="100"
+                height="100"
+                clip-path="url(#roundedMask)"
+              />
+            </svg>
+          </div>
+          <h3>NixOS Dotfiles</h3>
+          <p>
+            A reproducible, minimalist NixOS setup built for speed, clarity, and
+            deep customization.
+          </p>
+
+          <div class="project-tags">
+            <span>Nix</span><span>Flakes</span><span>Linux</span>
+          </div>
+        </a>
+
+        <!-- AskLaw -->
+        <a href="https://asklaw.ge" class="project-card">
+          <div class="project-icon">
+            <svg viewBox="0 0 100 100" class="icon-mask">
+              <defs>
+                <clipPath id="roundedMask" clipPathUnits="objectBoundingBox">
+                  <rect x="0" y="0" width="1" height="1" rx="0.22" ry="0.22" />
+                </clipPath>
+              </defs>
+              <image
+                href="assets/icons/asklaw.svg"
+                width="100"
+                height="100"
+                clip-path="url(#roundedMask)"
+              />
+            </svg>
+          </div>
+          <h3>AskLaw.ge</h3>
+          <p>
+            Production-grade systems for a growing legal-tech startup in
+            Georgia.
+          </p>
+
+          <div class="project-tags">
+            <span>Fullstack</span><span>Startup</span><span>Real-world</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="projects-more">
+        <a href="/projects.html" class="button" style="margin-top: 30px"
+          >See all projects</a
+        >
+      </div>
+    </section>
+
+    <section class="working-on">
+      <h2 class="section-title">What I'm Working On</h2>
+
+      <div class="work-grid">
+        <div class="work-card">
+          <img src="assets/icons/c.svg" class="work-icon" alt="" />
+          <div class="work-tags">
+            <span>C</span><span>Memory</span><span>Pointers</span>
+          </div>
+          <p>
+            Exploring low-level programming, systems architecture, and control
+            over memory behavior.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/icons/nix.svg" class="work-icon" alt="" />
+          <div class="work-tags">
+            <span>Nix</span><span>Flakes</span><span>Modules</span>
+          </div>
+          <p>
+            Building reproducible systems, clean abstractions, and modular
+            environments in Nix.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/icons/wayland.svg" class="work-icon" alt="" />
+          <div class="work-tags">
+            <span>Wayland</span><span>wlroots</span><span>Compositor</span>
+          </div>
+          <p>
+            Diving into rendering paths, window management, and protocol
+            behavior.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/icons/linux.svg" class="work-icon" alt="" />
+          <div class="work-tags">
+            <span>Linux</span><span>Internals</span><span>IPC</span>
+          </div>
+          <p>
+            Understanding process flow, terminals, system calls, IPC, and how
+            everything fits together.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/icons/asklaw.svg" class="work-icon" alt="" />
+          <div class="work-tags">
+            <span>AskLaw.ge</span><span>Backend</span><span>API</span>
+          </div>
+          <p>
+            Engineering production-grade backend features and improving system
+            reliability.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/icons/dotfiles.svg" class="work-icon" alt="" />
+          <div class="work-tags">
+            <span>Dotfiles</span><span>Minimal</span><span>Workflow</span>
+          </div>
+          <p>
+            Crafting a clean, efficient, repeatable development environment with
+            NixOS.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <p>
+              <a href="mailto:esartia.gurika@gmail.com"
+                >esartia.gurika@gmail.com</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://discord.com/users/1072910571487371293"
+                target="_blank"
+                >Discord: Gurjaka</a
+              >
+            </p>
+            <p>Zugdidi, Georgia</p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Navigation</h3>
+            <p><a href="#about">About Me</a></p>
+            <p><a href="#projects">Projects</a></p>
+            <p><a href="#blog">Blog</a></p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Links</h3>
+            <p>
+              <a href="https://github.com/gurjaka" target="_blank">GitHub</a>
+            </p>
+            <p><a href="https://asklaw.ge" target="_blank">AskLaw</a></p>
+            <p><a href="mailto:esartia.gurika@gmail.com">Work with me</a></p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© 2025 Gurjaka — All Rights Reserved.</div>
+      </div>
+    </footer>
+    <script src="scripts/stats.js"></script>
+  </body>
+</html>

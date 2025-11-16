@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Gurjaka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-left">Gurjaka</div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="highlight">About</a>
+        <a href="projects.html">Projects</a>
+        <!-- <a href="blog.html">Blog</a> -->
+      </nav>
+    </header>
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <div class="about-hero-inner">
+        <div class="about-hero-photo">
+          <img
+            src="https://avatars.githubusercontent.com/u/143032436?v=4"
+            alt="Gurjaka"
+          />
+        </div>
+
+        <div class="about-hero-text">
+          <h1 class="hero-title">About Me</h1>
+
+          <p class="hero-subtitle">
+            I'm a systems-focused engineer obsessed with low-level detail and
+            exact control.
+          </p>
+
+          <p class="hero-body">
+            I specialize in C, Linux internals, terminals, graphics paths, and
+            Wayland/wlroots. I enjoy understanding the entire stack — from CPU
+            architecture and memory allocation to window managers and UI
+            tooling.
+          </p>
+
+          <p class="hero-body">
+            I work on
+            <a
+              href="https://github.com/pretty-terminal/pretty"
+              class="inline-link"
+              >Pretty</a
+            >, contribute to Qtile’s Wayland backend, and engineer production
+            systems for
+            <a href="https://asklaw.ge" class="inline-link">Asklaw.ge</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES / PHILOSOPHY -->
+    <section class="about-values">
+      <h2 class="section-title">How I Think</h2>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Simplicity</h3>
+          <p>
+            Strip noise. Make the system speak for itself through structure, not
+            ornament.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <h3>Control</h3>
+          <p>
+            I prefer layers where behavior is explicit: memory, processes,
+            rendering, IPC.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <h3>Breaking to Learn</h3>
+          <p>
+            I intentionally break tools to learn their internals and failure
+            patterns.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <h3>Systems Thinking</h3>
+          <p>
+            I like understanding how low-level mechanisms form the foundations
+            for UX.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGINEERING FOCUS -->
+    <section class="about-focus">
+      <h2 class="section-title">Engineering Focus</h2>
+
+      <div class="focus-grid">
+        <div class="focus-card">
+          <img src="assets/icons/c.svg" class="focus-icon" />
+          <h3>C & Memory</h3>
+          <p>Pointers, allocation, terminal emulation, event loops.</p>
+        </div>
+
+        <div class="focus-card">
+          <img src="assets/icons/wayland.svg" class="focus-icon" />
+          <h3>Wayland / wlroots</h3>
+          <p>Compositor behavior, rendering, protocol flows.</p>
+        </div>
+
+        <div class="focus-card">
+          <img src="assets/icons/nix.svg" class="focus-icon" />
+          <h3>NixOS</h3>
+          <p>Flakes, reproducible systems, declarative environments.</p>
+        </div>
+
+        <div class="focus-card">
+          <img src="assets/icons/linux.svg" class="focus-icon" />
+          <h3>Linux Internals</h3>
+          <p>Processes, syscalls, IPC, TTYs, terminals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINI TIMELINE -->
+    <section class="about-timeline">
+      <h2 class="section-title">My Path</h2>
+
+      <div class="timeline about-path-timeline">
+        <!-- 2023 -->
+        <div class="checkpoint left">
+          <div class="checkpoint-inner">
+            <span class="repo-date">2023</span>
+            <h2>First Steps Into Programming</h2>
+            <p>
+              Started learning Python, basic algorithms, and tooling. Explored
+              Linux for the first time and discovered the terminal.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2023 NixOS -->
+        <div class="checkpoint right">
+          <div class="checkpoint-inner">
+            <span class="repo-date">2023</span>
+            <h2>NixOS & Declarative Systems</h2>
+            <p>
+              Built my first NixOS setup. Learned declarative configs, flakes,
+              and reproducible workflows. This completely shifted how I think
+              about systems.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2024 C -->
+        <div class="checkpoint left">
+          <div class="checkpoint-inner">
+            <span class="repo-date">2024</span>
+            <h2>Diving Into C & Low-Level Concepts</h2>
+            <p>
+              Took a deep dive into memory, pointers, allocation, terminals, and
+              system internals. Started building real software in C.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2024 Wayland -->
+        <div class="checkpoint right">
+          <div class="checkpoint-inner">
+            <span class="repo-date">2024</span>
+            <h2>Wayland / wlroots Exploration</h2>
+            <p>
+              Learned rendering paths, compositor logic, protocol behavior, and
+              window management internals. Contributed to Qtile’s Wayland
+              backend.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2025 Pretty -->
+        <div class="checkpoint left">
+          <div class="checkpoint-inner">
+            <span class="repo-date">2025</span>
+            <h2>Building Real Systems</h2>
+            <p>
+              Engineering <strong>Pretty</strong>, improving Qtile’s backend,
+              and developing production-grade features at
+              <strong>Asklaw.ge</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <p>
+              <a href="mailto:esartia.gurika@gmail.com"
+                >esartia.gurika@gmail.com</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://discord.com/users/1072910571487371293"
+                target="_blank"
+                >Discord: Gurjaka</a
+              >
+            </p>
+            <p>Zugdidi, Georgia</p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Navigation</h3>
+            <p><a href="#about">About Me</a></p>
+            <p><a href="#projects">Projects</a></p>
+            <p><a href="#blog">Blog</a></p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Links</h3>
+            <p>
+              <a href="https://github.com/gurjaka" target="_blank">GitHub</a>
+            </p>
+            <p><a href="https://asklaw.ge" target="_blank">AskLaw</a></p>
+            <p><a href="mailto:esartia.gurika@gmail.com">Work with me</a></p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© 2025 Gurjaka — All Rights Reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>
